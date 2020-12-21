@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lobster", cursive;
+  background-color: black;
+  color: white;
+  display: grid;
+  place-items: center;
+  min-block-size: 100%;
+  min-inline-size: 100%;
+}
+
+h1 {
+  font-size: 25vmin;
+  text-align: center;
+  font-weight: normal;
+}
+
+h1 .neon {
+  color: var(--neon);
+  text-shadow: 0 0 20px var(--neon-glow), 0 0 2.5vmin var(--neon-glow), 0 0 5vmin var(--neon-glow), 0 0 10vmin var(--neon-glow), 0 0 15vmin var(--neon-glow);
+}
+
+h1 .neon.red {
+  --neon: hsl(355 100% 95%);
+  --neon-glow: hsl(355 98% 40%);
+}
+
+h1 .neon.blue {
+  --neon: hsl(192 100% 95%);
+  --neon-glow: hsl(194 100% 40%);
+}
